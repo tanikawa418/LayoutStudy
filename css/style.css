@@ -1,0 +1,14 @@
+.squareFull {
+    background-color:aqua;
+    margin: 10px;
+}
+.squareLeft {
+    float: left;
+    margin:10px;
+    background-color:yellow;
+}
+.squareRight {
+    background-color:lightgreen;
+    margin: 10px;
+    float: right;
+}
