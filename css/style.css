@@ -12,3 +12,30 @@
     margin: 10px;
     float: right;
 }
+
+.col-sm-4{
+    background-color: lightgreen;
+    color: black;
+}
+
+.col{
+    background-color: indianred;
+}
+.partition{
+    background-color: lightgrey;
+    border-bottom-color: gray;
+}
+.row {
+    background-color: darkblue;
+    color: lightgrey;
+}
+h2 > a {
+    float: right;
+}
+hr {
+    height: 3px;
+    background-color: gray;
+}
+.mywidth{
+    width: 150px;
+}

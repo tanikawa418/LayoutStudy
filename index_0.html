@@ -13,18 +13,173 @@
 
 <body>
 <div class="container">
-    <div class="squareFull">
-        <p>full</p>
+    <h1><u>Bootstrap</u></h1>
+    <hr>
+    <h2>Grid System<a href="https://getbootstrap.com/docs/4.3/layout/grid/" target="_blank" class="badge badge-info">Info</a></h2>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <p>one of three columns</p>
+                <p> col-sm-4</p>
+            </div>
+            <div class="col-sm-4">
+                <p>one of three columns</p>
+                <p> col-sm-4</p>
+                </div>
+            <div class="col-sm-4">
+                <p>one of three columns</p>
+                <p> col-sm-4</p>
+            </div> 
+        </div>
+        <p></p>
+        <div class="row">
+            <div class="col">
+                <p>1 of 2</p> 
+                <p>class="col"</p>
+            </div>
+            <div class="col">
+                <p>1 of 2</p> 
+                <p>class="col"</p>
+            </div>
+        </div>
+        <p></p>
+        <div class="row">
+            <div class="col">Column</div>
+            <div class="w-100"></div>  <!--この行を上下に移動すると変化する-->
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+        </div>
+        <p></p>
+        <div class="row">
+            <div class="col-3">
+                <p>1 of 3</p> 
+                <p>class="col-3"</p>
+            </div>
+            <div class="col-6">
+                <p>2 of 3 wide</p>
+                <p>class="col-6"</p>
+            </div>
+            <div class="col-3">
+                <p>3 of 3</p> 
+                <p>class="col-3"</p>
+            </div>    
+        </div>
+    <br><br>
+    <hr>
+    <h2>Buttons <a href="https://getbootstrap.com/docs/4.3/components/buttons/" target="_blank" class="badge badge-info">Info</a></h2>
+
+    <!-- Bootstrap標準のStyle -->
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <p></p>
+    <button type="button" class="btn btn-primary btn-lg">Large Button</button>
+    <button type="button" class="btn btn-primary btn-sm">Small Button</button>
+    <p></p>
+    <button type="button" class="btn btn-danger btn-block">Block Level Button</button>
+    <p></p>
+
+    <!--mywidthクラスを追加し、Cssで固定幅に変更してみる  -->
+    <button type="button" class="btn btn-primary mywidth">Primary</button>
+    <button type="button" class="btn btn-secondary mywidth">Secondary</button>
+    <button type="button" class="btn btn-success mywidth">Success</button>
+    <button type="button" class="btn btn-danger mywidth">Danger</button>
+    <button type="button" class="btn btn-warning mywidth">Warning</button>
+    <button type="button" class="btn btn-info mywidth">Info</button>
+    <button type="button" class="btn btn-dark mywidth">Dark</button>
+
+    <p></p>
+
+    <button type="button" class="btn btn-success btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off">Toggle</button>
+    <p></p>
+
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>9ball
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off">10ball
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off">14-1
+        </label>
+    </div>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-danger active">
+                <input type="radio" name="options" id="option10" autocomplete="off" checked>Efren
+            </label>
+            <label class="btn btn-danger">
+                <input type="radio" name="options" id="option20" autocomplete="off">Bustamante
+            </label>
+            <label class="btn btn-danger">
+                <input type="radio" name="options" id="option30" autocomplete="off">Alcano
+            </label>
+    </div>
+    
+    <p></p>
+
+    <!-- ドロップダウンボタン -->
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <p class="dropdown-item">option1</p>
+            <p class="dropdown-item">option2</p>
+        </div>
     </div>
 
-    <div class="squareLeft">
-        <p>left</p>
+    <!-- 通常ボタンとのグルーピング　btn-groupクラスのネスト -->
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-danger btn-lg">Button1</button>
+        <button type="button" class="btn btn-danger btn-lg">Button2</button>
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <p class="dropdown-item">option1</p>
+                <p class="dropdown-item">option2</p>
+            </div>
+        </div>
     </div>
-    <div class="squareRight">
-        <p>right</p>
-    
+    <p></p>
+
+    <!-- ボタン押下でCollapseをトグルする -->
+    <p>
+        <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Save Search Conditions
+        </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <label>
+            <input type="text" placeholder="Save as...">
+        </label>
+        <button class="btn btn-primary btn-sm">Save</button>
     </div>
-        aaa
+
+    <p></p>
+
+    <!-- ボタンメニュー -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-info">Main Action</button>
+        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Main Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </div>
+
 
 </div>
 
