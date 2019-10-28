@@ -1,0 +1,17 @@
+.tglActive{
+    display: block;
+}
+
+.tglPassive{
+    display: none;
+}
+.winLose{
+    display: block;
+}
+
+.straightPool{
+    display: none;
+}
+.formWinLose{
+    display: none;
+}
