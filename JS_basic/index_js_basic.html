@@ -15,11 +15,11 @@
 
 </head>
 <body>
-    <div class="tglActive">Active</div>
-    <div class="tglPassive">Passive</div>
 
     <div class="container">
-
+        <hr>
+        <br>
+        <h3>オプションボタンによる入力フォームの変更</h3>
         <!-- <form name="form1"> -->
         <div class="btn-group btn-group-toggle" id="gameType" data-toggle="buttons">
             <label class="btn btn-secondary active">
@@ -35,24 +35,74 @@
         <!-- </form> -->
         
 
-
-        <form class="winLose" name="formWinLose">
-            <div>
-                <p>ここに9ball系の入力コンポーネントを配置する</p>
-            </div>
+        <!-- 9ball 10ball共通の入力フォーム -->
+        <form class="tglActive" id="formWinLose">
+            <!-- <div> -->
+                <p>ここに9ballと10ball共通の入力コンポーネントを配置する</p>
+                <div>
+                    <label for="date1"><h5>Date</h5></label>
+                    <input type="date" id="date1">
+                </div>
+                <div>
+                    <label for="selectOpp"><h5>Opponent</h5></label>
+                    <select name="Opponent" id="selectOpp">
+                        <option value="1">Xiaoting Pan</option>
+                        <option value="2">Efren Reyes</option>
+                        <option value="3">Francisco Bustamante</option>
+                        <option value="4">Shane Van Boening</option>
+                        <option value="5">Others</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="selectRaceTo"><h5>Race to ...</h5></label>
+                    <select name="raceTo" id="selectRaceTo">
+                        <option value="1">5</option>
+                        <option value="2">7</option>
+                        <option value="3">9</option>
+                    </select>
+                    <label for="selectRaceTo">wins</label>
+                </div>
+                <div>
+                    <label for="selectBrk"><h5>Break Rule</h5></label>
+                    <select name="breakRule" id="selectBrk">
+                        <option value="winner">Winner's Break</option>
+                        <option value="Alternate" selected>Alternate Break</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="note1"><h5>Notes</h5></label>
+                    <textarea id="note1" rows="4" cols="50"></textarea>
+                </div>
+                <br><br><br>
+                <button type="button" class="btn btn-primary formBtn">Submit</button>
+            <!-- </div> -->
         </form>
-        <form class="straightPool">
+
+        <!-- 14-1専用の入力フォーム -->
+        <form class="tglPassive" id="formStraightPool">
             <div>
+
                 ここに14-1系の入力コンポーネントを配置する
-            </div>
+                <div>
+                        <label for="selectOpp"><h5>Opponent</h5></label>
+                        <select name="Opponent" id="selectOpp">
+                            <option value="1">Xiaoting Pan</option>
+                            <option value="2">Efren Reyes</option>
+                            <option value="3">Francisco Bustamante</option>
+                            <option value="4">Shane Van Boening</option>
+                            <option value="5">Others</option>
+                        </select>
+                    </div>
+                </div>
         </form>
 
 
-    </div> <!--container-->
+    </div> <!--End of container-->
 
     <!-- JavaScript -->
 
     <script>
+        // トグルボタンのonchangeイベントで、選択状態を取得する
         var elms = document.getElementsByName("options");
         myFunc = function(){
             for (var i = 0; i<elms.length;i++){
@@ -61,11 +111,23 @@
                 if(elms[i].checked){
                     console.log(elms[i].id + "is selected.");
                     console.log(elms[i].className);
+                    if (elms[i].className == "winLose") {
+                            document.getElementById("formWinLose").className = "tglActive";
+                            document.getElementById("formStraightPool").className = "tglPassive";
+                        }else{
+                            document.getElementById("formWinLose").className = "tglPassive";
+                            document.getElementById("formStraightPool").className = "tglActive";
+                        }
+                        console.log("formWinLose class:" + document.getElementById("formWinLose").className);
+                        console.log("formStraightPool class:" + document.getElementById("formStraightPool").className);
                 }
             }
         }
         document.getElementById("gameType").onchange = myFunc;
+
     </script>
+
+
 
 
 
