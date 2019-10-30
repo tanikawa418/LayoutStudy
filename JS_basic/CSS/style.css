@@ -17,6 +17,8 @@
 }
 #formWinLose{
     position: relative;
+    border-style: none;
+    background-color: rgb(255, 223, 195);
 }
 #formWinLose label {
     /* display: inline-block; */
@@ -26,9 +28,11 @@
     vertical-align: 0%;
     margin-left: 30px;
 }
-#formWinLose select {
-    /* display: inline-block; */
-}
+/* #formWinLose select {
+    background-color: yellow;
+}  */
+
+
 textarea {
     vertical-align: top;
     width: 50%;
