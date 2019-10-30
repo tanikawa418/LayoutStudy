@@ -17,6 +17,9 @@
 }
 #formWinLose{
     position: relative;
+    border-style: none;
+    background-color: rgb(255, 223, 195);
+    width: 700px;
 }
 #formWinLose label {
     /* display: inline-block; */
@@ -25,10 +28,14 @@
     text-align: left;
     vertical-align: 0%;
     margin-left: 30px;
+    /* border-bottom: solid 1px black; */
 }
 #formWinLose select {
-    /* display: inline-block; */
-}
+    border-style: none;
+    border-bottom: solid 1px orange;
+} 
+
+
 textarea {
     vertical-align: top;
     width: 50%;
@@ -37,4 +44,19 @@ textarea {
     position: absolute;
     bottom: 10px;
     right: 20px;
+}
+div.form-header-area{
+    background-color: black;
+    height: 70px;
+    width: 700px; /*これを指定しないとインライン要素なのでテキストの長さにしかならない*/
+    color: gray;
+    display: table-cell; /*formのタイトルを上下中央にするため*/
+    vertical-align: middle;
+}
+.form-header-text{
+    color: gray;
+    /* display: inline-block; alignを使うため  */
+    /* vertical-align: middle; */
+    position: absolute;
+    top: 20px;
 }
