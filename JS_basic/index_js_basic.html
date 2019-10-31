@@ -20,28 +20,33 @@
         <hr>
         <br>
         <h3>オプションボタンによる入力フォームの変更</h3>
+        <br>
+        <h4>Select Game</h4>
         <!-- <form name="form1"> -->
         <div class="btn-group btn-group-toggle" id="gameType" data-toggle="buttons">
-            <label class="btn btn-secondary active">
+            <label class="btn btn-secondary btn-lg active">
                 <input type="radio" name="options" id="option1" autocomplete="off" class="winLose" checked>9ball
             </label>
-            <label class="btn btn-secondary">
+            <label class="btn btn-secondary btn-lg">
                 <input type="radio" name="options" id="option2" autocomplete="off" class="winLose">10ball
             </label>
-            <label class="btn btn-secondary">
+            <label class="btn btn-secondary btn-lg">
                 <input type="radio" name="options" id="option3" autocomplete="off" class="straightPool">14-1
             </label>
         </div>
+        <br><br>
+
         <!-- </form> -->
         
 
         <!-- 9ball 10ball共通の入力フォーム -->
         <form class="tglActive" id="formWinLose">
-            <!-- <div> -->
                 <div class="form-header-area">
-                    <h3>title</h3>
+                    <h3>9ball</h3>
+                    <p class="formSubtitle" id="formSubtitle"></p>
                 </div>
-                <p>ここに9ballと10ball共通の入力コンポーネントを配置する</p>
+                <!-- <p>ここに9ballと10ball共通の入力コンポーネントを配置する</p> -->
+                <br>
                 <div>
                     <label for="date1"><h5>Date</h5></label>
                     <input type="date" id="date1">
@@ -49,6 +54,7 @@
                 <div>
                     <label for="selectOpp"><h5>Opponent</h5></label>
                     <select name="Opponent" id="selectOpp">
+                        <option value="" style="display:none;">Select opponent..</span></option>
                         <option value="1">Xiaoting Pan</option>
                         <option value="2">Efren Reyes</option>
                         <option value="3">Francisco Bustamante</option>
@@ -78,7 +84,6 @@
                 </div>
                 <br><br><br>
                 <button type="button" class="btn btn-primary formBtn">Submit</button>
-            <!-- </div> -->
         </form>
 
         <!-- 14-1専用の入力フォーム -->
@@ -102,65 +107,46 @@
 
     </div> <!--End of container-->
 
-    <!-- JavaScript -->
-
+<!-- JavaScript -->
     <script>
+        // Game別のForm Subtitleの定義と初期表示設定
+        const nineBallST = "Go for the Break run out!";
+        const tenBallST = "Be strategic and play safe.";
+        const straightPoolST = "Most important factor is making a good shape. Keep trying to be calm!";
+        var target = document.getElementById('formSubtitle');
+        document.getElementById("formSubtitle").innerText = nineBallST;
+
         // トグルボタンのonchangeイベントで、選択状態を取得する
         var elms = document.getElementsByName("options");
         myFunc = function(){
             for (var i = 0; i<elms.length;i++){
-            // console.log(i + ":" + elms[i].checked);
-            // console.log(elms[i].id);
+                // 9ball系と14-1系のフォームのクラス切替
                 if(elms[i].checked){
-                    console.log(elms[i].id + "is selected.");
-                    console.log(elms[i].className);
                     if (elms[i].className == "winLose") {
                             document.getElementById("formWinLose").className = "tglActive";
                             document.getElementById("formStraightPool").className = "tglPassive";
-                        }else{
+                    }else{
                             document.getElementById("formWinLose").className = "tglPassive";
                             document.getElementById("formStraightPool").className = "tglActive";
-                        }
-                        console.log("formWinLose class:" + document.getElementById("formWinLose").className);
-                        console.log("formStraightPool class:" + document.getElementById("formStraightPool").className);
+                    }
+                    // Form subtitleの変更 (ゆくゆくはDBから戦績を取ってこれるようになりたい)
+                    if(elms[i].id =="option1") {
+                        target.innerText = nineBallST;
+                    }else if(elms[i].id == "option2"){
+                        target.innerText = tenBallST;
+                    }else if(elms[i].id == "option3"){
+                        target.innerText = straightPoolST;
+                    }
                 }
-            }
+            } //End of for-loop
         }
         document.getElementById("gameType").onchange = myFunc;
 
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
+<!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-
-
 </body>
 
 </html>
