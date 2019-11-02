@@ -42,7 +42,7 @@
         <!-- 9ball 10ball共通の入力フォーム -->
         <form class="tglActive" id="formWinLose">
                 <div class="form-header-area">
-                    <h3>9ball</h3>
+                    <h3 id="formTitle">9ball</h3>
                     <p class="formSubtitle" id="formSubtitle"></p>
                 </div>
                 <!-- <p>ここに9ballと10ball共通の入力コンポーネントを配置する</p> -->
@@ -88,20 +88,33 @@
 
         <!-- 14-1専用の入力フォーム -->
         <form class="tglPassive" id="formStraightPool">
+            <div class="form-header-area">
+                <h3 id="formTitle">14-1</h3>
+                <p class="formSubtitle" id="formSubtitle"></p>
+            </div>
+            <br>
+                <!-- ここに14-1系の入力コンポーネントを配置する -->
             <div>
+                <label for="date1"><h5>Date</h5></label>
+                <input type="date" id="date1">
+            </div>
+            <div>
+                <label for="selectOpp"><h5>Opponent</h5></label>
+                <select name="Opponent" id="selectOpp">
+                    <option value="" style="display:none;">Select opponent..</span></option>
+                    <option value="1">Xiaoting Pan</option>
+                    <option value="2">Efren Reyes</option>
+                    <option value="3">Francisco Bustamante</option>
+                    <option value="4">Shane Van Boening</option>
+                    <option value="5">Others</option>
+                </select>
+            </div>
+            <br><br>
+            <button type="button" class="btn btn-primary formBtn">Submit</button>
 
-                ここに14-1系の入力コンポーネントを配置する
-                <div>
-                        <label for="selectOpp"><h5>Opponent</h5></label>
-                        <select name="Opponent" id="selectOpp">
-                            <option value="1">Xiaoting Pan</option>
-                            <option value="2">Efren Reyes</option>
-                            <option value="3">Francisco Bustamante</option>
-                            <option value="4">Shane Van Boening</option>
-                            <option value="5">Others</option>
-                        </select>
-                    </div>
-                </div>
+
+
+
         </form>
 
 
@@ -113,8 +126,10 @@
         const nineBallST = "Go for the Break run out!";
         const tenBallST = "Be strategic and play safe.";
         const straightPoolST = "Most important factor is making a good shape. Keep trying to be calm!";
-        var target = document.getElementById('formSubtitle');
+        var targetSub = document.getElementById('formSubtitle');
         document.getElementById("formSubtitle").innerText = nineBallST;
+        var targetMain = document.getElementById("formTitle");
+        targetMain.innerText = "9ball";
 
         // トグルボタンのonchangeイベントで、選択状態を取得する
         var elms = document.getElementsByName("options");
@@ -131,11 +146,14 @@
                     }
                     // Form subtitleの変更 (ゆくゆくはDBから戦績を取ってこれるようになりたい)
                     if(elms[i].id =="option1") {
-                        target.innerText = nineBallST;
+                        targetMain.innerText = "9ball";
+                        targetSub.innerText = nineBallST;
                     }else if(elms[i].id == "option2"){
-                        target.innerText = tenBallST;
+                        targetMain.innerText = "10ball";
+                        targetSub.innerText = tenBallST;
                     }else if(elms[i].id == "option3"){
-                        target.innerText = straightPoolST;
+                        targetMain.innerText = "14-1(Straight Pool)";
+                        targetSub.innerText = straightPoolST;
                     }
                 }
             } //End of for-loop
