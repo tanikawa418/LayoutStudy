@@ -1,0 +1,38 @@
+body {
+    /* min-height: 100vh;
+    display: flex;
+    flex-direction: column; */
+    background-color:#DEE5F2;
+}
+.pageHeader{
+    height: 50px; 
+    background-color:#2D63BE
+}
+.globalNavi{
+    background-color: #DEE5F2;
+}
+.contents{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.slipInfo{
+    background-color: ivory;
+    width: 60%;
+    height:300px;
+    float: left;
+    /* margin-left;: 5px; */
+    /* margin-right: 5px; */
+}
+.statusInfo{
+    background-color: khaki;
+    width: 45%;
+    height:300px;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: right;
+
+}
+.table{
+    clear: both;
+}
+
