@@ -10,44 +10,142 @@
 </head>
 <body>
     
-    aaaa
     <div class="pageHeader">
-        <p>pageHeader area</p>
+        <p>Ci*x</p>
     </div>
 
     <div class="globalNavi">
-        <p>glovalNavigation area</p>
+        <h4>= 統制勘定消込履歴照会　globalNavi</h4>
     </div>
     <div class="contents">
+        <div class="slipHeader"> <!--この要素の中でFloatする方法を調べる-->
+            <!-- <p>slipHeader</p> -->
+            <div class="slipInfo">
+                <p class="areaTitle">計上明細</p>
+                <!-- <p>slipInfo</p> -->
+                <div class="slipDetailArea">
+                    <h1>Detail Here</h1>
+                    <table class="slipDetailTable">
+                        <tr>
+                            <th>伝票番号</th>
+                            <td><a href="">1003234</a></td>
+                            <th>勘定科目</th>
+                            <td>3001-01　未払金</td>
+                        </tr>
+                    </table>
 
-        <div class="slipInfo col-6">
-            <p>計上明細</p>
-            <p>slipInfo</p>
 
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="statusInfo">
+                <p class="areaTitle">消込状況</p>
+                <!-- <p>statusInfo</p> -->
+                <div class="statusDetailArea">
+                        <h1>Detail Here</h1>
+                    </div>
+                </div>
         </div>
-        <div class="statusInfo col-6">
-            <p>消込状況</p>
-            <p>statusInfo</p>
-        </div>
+        <div class="tableArea">
+                <p>table area</p>
+            <p class="areaTitle">消込履歴</p>
+            <table class="mainTable" border="1">
+                <tr>
+                    <th rowspan="2">伝票日付</th>
+                    <th rowspan="2">勘定科目</th>
+                    <th rowspan="2">部門</th>
+                    <th rowspan="2">伝票番号</th>
+                    <th rowspan="2">伝票摘要</th>
+                    <th rowspan="2">伝票ステータス</th>
+                    <th rowspan="2">通貨</th>
+                    <th colspan="3" style="width: 400px;">取引通貨</th>
+                    <th colspan="3" style="width: 400px;">機能通貨</th>
+                </tr>
+                <tr>
+                        <th style="width=100px;">借方</th>
+                        <th>貸方</th>
+                        <th>残高</th>
+                        <th>借方</th>
+                        <th>貸方</th>
+                        <th>残高</th>
+                    </tr>
+    
+    
 
-        <div class="table">
-            <p>消込履歴</p>
-            <table>
+
+
+
+
                 <tr>
-                    <th>伝票日付</th>
-                    <th>勘定科目</th>
+                    <td class="slipNum typeAlignCenter">2019/02/28</td>
+                    <td class="account typeAlignLeft">普通預金、売掛金　等</td>
+                    <td class="costCenter typeAlignLeft">財務部</td>
+                    <td class="slipNum typeAlignLeft"><a href="">1004211</a></td>
+                    <td class="notes typeAlignLeft">2月末支払分</td>
+                    <td class="wf typeAlignCenter"><div class="wfApp">承認済</div></td>
+                    <td class="currency typeAlignCenter">USD</td>
+                    <td class="amount typeAlignRight">70.00</td>
+                    <td class="amount typeAlignRight"></td>
+                    <td class="amount typeAlignRight">30.00</td>
+                    <td class="amount typeAlignRight">6,960</td>
+                    <td class="amount typeAlignRight"></td>
+                    <td class="amount typeAlignRight">3,040</td>
                 </tr>
                 <tr>
-                    <td>2019/02/28</td>
-                    <td>普通預金、売掛金　等</td>
+                    <td class="slipNum typeAlignCenter">2019/03/31</td>
+                    <td class="account typeAlignLeft">為替差損</td>
+                    <td class="costCenter typeAlignLeft">財務部</td>
+                    <td class="slipNum typeAlignLeft"><a href="">1007130</a></td>
+                    <td class="notes typeAlignLeft">決算時評価替え</td>
+                    <td class="wf typeAlignCenter"><div class="wfApp">承認済</div></td>
+                    <td class="currency typeAlignCenter">USD</td>
+                    <td class="amount typeAlignRight"></td>
+                    <td class="amount typeAlignRight">0.00</td>
+                    <td class="amount typeAlignRight">30.00</td>
+                    <td class="amount typeAlignRight"></td>
+                    <td class="amount typeAlignRight">120</td>
+                    <td class="amount typeAlignRight">3,160</td>
                 </tr>
                 <tr>
-                    <td>2019/02/28</td>
-                    <td>普通預金、売掛金　等</td>
+                    <td class="slipNum typeAlignCenter">2019/04/01</td>
+                    <td class="account typeAlignLeft">為替差損</td>
+                    <td class="costCenter typeAlignLeft">財務部</td>
+                    <td class="slipNum typeAlignLeft"><a href="">1007131</a></td>
+                    <td class="notes typeAlignLeft">決算時評価替え戻し</td>
+                    <td class="wf typeAlignCenter"><div class="wfApp">承認済</div></td>
+                    <td class="currency typeAlignCenter">USD</td>
+                    <td class="amount typeAlignRight">0.00</td>
+                    <td class="amount typeAlignRight"></td>
+                    <td class="amount typeAlignRight">30.00</td>
+                    <td class="amount typeAlignRight">120</td>
+                    <td class="amount typeAlignRight"></td>
+                    <td class="amount typeAlignRight">3,160</td>
                 </tr>
+                <tr>
+                    <td class="slipNum typeAlignCenter">2019/04/30</td>
+                    <td class="account typeAlignLeft">普通預金、支払手数料等</td>
+                    <td class="costCenter typeAlignLeft">財務部</td>
+                    <td class="slipNum typeAlignLeft"><a href="">1008432</a></td>
+                    <td class="notes typeAlignLeft">4月末支払分</td>
+                    <td class="wf typeAlignCenter"><div class="wfWip">承認中</div></td>
+                    <td class="currency typeAlignCenter">USD</td>
+                    <td class="amount typeAlignRight">10.00</td>
+                    <td class="amount typeAlignRight"></td>
+                    <td class="amount typeAlignRight">20.00</td>
+                    <td class="amount typeAlignRight">1,060</td>
+                    <td class="amount typeAlignRight"></td>
+                    <td class="amount typeAlignRight">1,980</td>
+                </tr>
+            
+            
+
+
             </table>
-            <p>table area</p>
-
         </div>
     </div>
 </body>
