@@ -5,54 +5,108 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
     <title>統制勘定消込履歴照会画面</title>
 
 </head>
 <body>
     
     <div class="pageHeader">
-        <p>Ci*x</p>
+        <p>
+            <p class="logo">Ci*x Financials</p>
+            <!-- <p class="favorites">お気に入り</p> -->
+            <select name="favorites" id="favorites">My Favorites
+                <option value="" aria-checked="">My Favorites</option>
+                <option value="1">勘定消込画面</option>
+                <option value="2">伝票入力画面</option>
+            </select>
+            <span>Back to Menu</span>
+            <span class="pageHeaderRight"><img  class="img" src="img/johnlennonpic.jpg" alt="伊">John Lennon</span>
+            <span class="pageHeaderRight"><i class="fa fa-question-circle"></i></span>
+            <span class="pageHeaderRight"><input type="text" placeholder="検索ワードを入力"></span>
+        </p>
+        <i class="fab fa-bluetooth-b"></i>
     </div>
 
     <div class="globalNavi">
-        <h4>= 統制勘定消込履歴照会　globalNavi</h4>
+        <h4><i class="fa fa-bars"></i>&nbsp;&nbsp;統制勘定消込履歴照会</h4>
     </div>
     <div class="contents">
-        <div class="slipHeader"> <!--この要素の中でFloatする方法を調べる-->
-            <!-- <p>slipHeader</p> -->
+        <div class="slipHeader"> 
             <div class="slipInfo">
                 <p class="areaTitle">計上明細</p>
-                <!-- <p>slipInfo</p> -->
                 <div class="slipDetailArea">
-                    <h1>Detail Here</h1>
+                    <!-- <h1>Detail Here</h1> -->
                     <table class="slipDetailTable">
                         <tr>
-                            <th>伝票番号</th>
-                            <td><a href="">1003234</a></td>
-                            <th>勘定科目</th>
+                            <td class="detailField">伝票-明細番号</td>
+                            <td><a href="">1004569-02</a></td>
+                            <td class="detailField">勘定科目</td>
                             <td>3001-01　未払金</td>
                         </tr>
+                        <tr>
+                            <td class="detailField">受払紐付けキー</td>
+                            <td>0038494</td>
+                            <td class="detailField">部門</td>
+                            <td>600124　事業設備管理課</td>
+                        </tr>
+                        <tr>
+                            <td class="detailField">計上日</td>
+                            <td>2019/01/12</td>
+                            <td class="detailField">取引先</td>
+                            <td>1098234　株式会社〇〇〇建設　東京本社</td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td class="detailField">伝票摘要</td>
+                            <td colspan="3">品川オフィス北側改修工事12F分 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                        </tr>
                     </table>
-
-
-
-
-
-
-
-
                 </div>
             </div>
             <div class="statusInfo">
                 <p class="areaTitle">消込状況</p>
-                <!-- <p>statusInfo</p> -->
                 <div class="statusDetailArea">
-                        <h1>Detail Here</h1>
-                    </div>
+                    <!-- <h1>Detail Here</h1> -->
+                <table class="statusDetailTable">
+                    <!-- <thead class="statusDetailTh"> -->
+                        <tr class="statusDetailTh">
+                            <td class="detailField"></td>
+                            <td class="headerAmt">取引通貨</td>
+                            <td class="headerCrr"></td>
+                            <td class="headerAmt">機能通貨</td>
+                            <td class="headerCrr"></td>
+                        </tr>
+                    <!-- </thead> -->
+                    <tr>
+                        <td class="detailField">計上金額</td>
+                        <td class="headerAmt">100.00</td>
+                        <td class="headerCrr">USD</td>
+                        <td class="headerAmt">10,000</td>
+                        <td class="headerCrr">JPY</td>
+                    </tr>
+                    <tr class="statusDetailTh">
+                        <td class="detailField">消込済金額</td>
+                        <td class="headerAmt">80.00</td>
+                        <td class="headerCrr">USD</td>
+                        <td class="headerAmt">8,020</td>
+                        <td class="headerCrr">JPY</td>
+                    </tr>
+                    <tr>
+                        <td class="detailField">未消込金額</td>
+                        <td class="headerAmt sumResult">20.00</td>
+                        <td class="headerCrr sumResult">USD</td>
+                        <td class="headerAmt sumResult">1,980</td>
+                        <td class="headerCrr sumResult">JPY</td>
+                    </tr>
+            
+                </table>
+
                 </div>
+            </div>
         </div>
         <div class="tableArea">
-                <p>table area</p>
             <p class="areaTitle">消込履歴</p>
             <table class="mainTable" border="1">
                 <tr>
