@@ -15,6 +15,7 @@
     <div class="pageHeader">
         <p>
             <p class="logo">Ci*x Financials</p>
+            <span><i class="fa fa-external-link "></i></span>
             <!-- <p class="favorites">お気に入り</p> -->
             <select name="favorites" id="favorites">My Favorites
                 <option value="" aria-checked="">My Favorites</option>
@@ -26,7 +27,7 @@
             <span class="pageHeaderRight"><i class="fa fa-question-circle"></i></span>
             <span class="pageHeaderRight"><input type="text" placeholder="検索ワードを入力"></span>
         </p>
-        <i class="fab fa-bluetooth-b"></i>
+        <!-- <i class="fab fa-bluetooth-b"></i> -->
     </div>
 
     <div class="globalNavi">
@@ -68,44 +69,40 @@
             <div class="statusInfo">
                 <p class="areaTitle">消込状況</p>
                 <div class="statusDetailArea">
-                    <!-- <h1>Detail Here</h1> -->
-                <table class="statusDetailTable">
-                    <!-- <thead class="statusDetailTh"> -->
-                        <tr class="statusDetailTh">
-                            <td class="detailField"></td>
-                            <td class="headerAmt">取引通貨</td>
-                            <td class="headerCrr"></td>
-                            <td class="headerAmt">機能通貨</td>
-                            <td class="headerCrr"></td>
+                    <table class="statusDetailTable">
+                            <tr class="statusDetailTh">
+                                <td class="detailField"></td>
+                                <td class="headerAmt">取引通貨</td>
+                                <td class="headerCrr"></td>
+                                <td class="headerAmt">機能通貨</td>
+                                <td class="headerCrr"></td>
+                            </tr>
+                        <tr>
+                            <td class="detailField">計上金額</td>
+                            <td class="headerAmt">100.00</td>
+                            <td class="headerCrr">USD</td>
+                            <td class="headerAmt">10,000</td>
+                            <td class="headerCrr">JPY</td>
                         </tr>
-                    <!-- </thead> -->
-                    <tr>
-                        <td class="detailField">計上金額</td>
-                        <td class="headerAmt">100.00</td>
-                        <td class="headerCrr">USD</td>
-                        <td class="headerAmt">10,000</td>
-                        <td class="headerCrr">JPY</td>
-                    </tr>
-                    <tr class="statusDetailTh">
-                        <td class="detailField">消込済金額</td>
-                        <td class="headerAmt">80.00</td>
-                        <td class="headerCrr">USD</td>
-                        <td class="headerAmt">8,020</td>
-                        <td class="headerCrr">JPY</td>
-                    </tr>
-                    <tr>
-                        <td class="detailField">未消込金額</td>
-                        <td class="headerAmt sumResult">20.00</td>
-                        <td class="headerCrr sumResult">USD</td>
-                        <td class="headerAmt sumResult">1,980</td>
-                        <td class="headerCrr sumResult">JPY</td>
-                    </tr>
-            
-                </table>
-
-                </div>
+                        <tr class="statusDetailTh">
+                            <td class="detailField">消込済金額</td>
+                            <td class="headerAmt">80.00</td>
+                            <td class="headerCrr">USD</td>
+                            <td class="headerAmt">8,020</td>
+                            <td class="headerCrr">JPY</td>
+                        </tr>
+                        <tr>
+                            <td class="detailField">未消込金額</td>
+                            <td class="headerAmt sumResult">20.00</td>
+                            <td class="headerCrr sumResult">USD</td>
+                            <td class="headerAmt sumResult">1,980</td>
+                            <td class="headerCrr sumResult">JPY</td>
+                        </tr>
+                    </table>
+                </div> <!--End of statusDetailArea-->
             </div>
-        </div>
+        </div> <!--End of slipheader-->
+
         <div class="tableArea">
             <p class="areaTitle">消込履歴</p>
             <table class="mainTable" border="1">
@@ -121,25 +118,18 @@
                     <th colspan="3" style="width: 400px;">機能通貨</th>
                 </tr>
                 <tr>
-                        <th style="width=100px;">借方</th>
-                        <th>貸方</th>
-                        <th>残高</th>
-                        <th>借方</th>
-                        <th>貸方</th>
-                        <th>残高</th>
-                    </tr>
-    
-    
-
-
-
-
-
+                    <th style="width=100px;">借方</th>
+                    <th>貸方</th>
+                    <th>残高</th>
+                    <th>借方</th>
+                    <th>貸方</th>
+                    <th>残高</th>
+                </tr>
                 <tr>
                     <td class="slipNum typeAlignCenter">2019/02/28</td>
                     <td class="account typeAlignLeft">普通預金、売掛金　等</td>
                     <td class="costCenter typeAlignLeft">財務部</td>
-                    <td class="slipNum typeAlignLeft"><a href="">1004211</a></td>
+                    <td class="slipNum typeAlignLeft"><a href="">1004211-01&nbsp;<i class="fas fa-external-link-alt"></i></a></td>
                     <td class="notes typeAlignLeft">2月末支払分</td>
                     <td class="wf typeAlignCenter"><div class="wfApp">承認済</div></td>
                     <td class="currency typeAlignCenter">USD</td>
@@ -154,7 +144,7 @@
                     <td class="slipNum typeAlignCenter">2019/03/31</td>
                     <td class="account typeAlignLeft">為替差損</td>
                     <td class="costCenter typeAlignLeft">財務部</td>
-                    <td class="slipNum typeAlignLeft"><a href="">1007130</a></td>
+                    <td class="slipNum typeAlignLeft"><a href="">1007130-05&nbsp;<i class="fas fa-external-link-alt"></i></a></td>
                     <td class="notes typeAlignLeft">決算時評価替え</td>
                     <td class="wf typeAlignCenter"><div class="wfApp">承認済</div></td>
                     <td class="currency typeAlignCenter">USD</td>
@@ -169,7 +159,7 @@
                     <td class="slipNum typeAlignCenter">2019/04/01</td>
                     <td class="account typeAlignLeft">為替差損</td>
                     <td class="costCenter typeAlignLeft">財務部</td>
-                    <td class="slipNum typeAlignLeft"><a href="">1007131</a></td>
+                    <td class="slipNum typeAlignLeft"><a href="">1007131-02&nbsp;<i class="fas fa-external-link-alt"></i></a></td>
                     <td class="notes typeAlignLeft">決算時評価替え戻し</td>
                     <td class="wf typeAlignCenter"><div class="wfApp">承認済</div></td>
                     <td class="currency typeAlignCenter">USD</td>
@@ -184,7 +174,7 @@
                     <td class="slipNum typeAlignCenter">2019/04/30</td>
                     <td class="account typeAlignLeft">普通預金、支払手数料等</td>
                     <td class="costCenter typeAlignLeft">財務部</td>
-                    <td class="slipNum typeAlignLeft"><a href="">1008432</a></td>
+                    <td class="slipNum typeAlignLeft"><a href="">1008432-02&nbsp;<i class="fas fa-external-link-alt"></i></a></td>
                     <td class="notes typeAlignLeft">4月末支払分</td>
                     <td class="wf typeAlignCenter"><div class="wfWip">承認中</div></td>
                     <td class="currency typeAlignCenter">USD</td>
@@ -195,10 +185,6 @@
                     <td class="amount typeAlignRight"></td>
                     <td class="amount typeAlignRight">1,980</td>
                 </tr>
-            
-            
-
-
             </table>
         </div>
     </div>
