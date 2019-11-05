@@ -193,16 +193,23 @@ select {
     vertical-align: middle;
     float: right;
     margin: 10px;
+    margin-left: 15px;
 }
 input{
     background-color: #4C83E8;
     color: white;
+    width: 250px;
 }
 .img{
     height: 35px;
     width: 35px;
     border-radius: 50%;
+    margin-right: 5px;
 }
 ::placeholder{
     color:lightgray;
+}
+.origin{
+    font-weight: bold;
+    background-color: aqua;
 }

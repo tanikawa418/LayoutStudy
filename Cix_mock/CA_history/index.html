@@ -22,7 +22,7 @@
                 <option value="1">勘定消込画面</option>
                 <option value="2">伝票入力画面</option>
             </select>
-            <span>Back to Menu</span>
+            <span onclick="alert('Go to Hell!');">Back to Menu</span>
             <span class="pageHeaderRight"><img  class="img" src="img/johnlennonpic.jpg" alt="伊">John Lennon</span>
             <span class="pageHeaderRight"><i class="fa fa-question-circle"></i></span>
             <span class="pageHeaderRight"><input type="text" placeholder="検索ワードを入力"></span>
@@ -105,7 +105,7 @@
 
         <div class="tableArea">
             <p class="areaTitle">消込履歴</p>
-            <table class="mainTable" border="1">
+            <table class="mainTable table-hover" border="1">
                 <tr>
                     <th rowspan="2">伝票日付</th>
                     <th rowspan="2">勘定科目</th>
@@ -125,6 +125,18 @@
                     <th>貸方</th>
                     <th>残高</th>
                 </tr>
+                <tr class="origin">
+                    <td class="slipNum typeAlignCenter">2019/01/12</td>
+                    <td class="origin typeAlignLeft" colspan="5">計上明細</td>
+                    <td class="currency typeAlignCenter">USD</td>
+                    <td class="amount typeAlignRight">70.00</td>
+                    <td class="amount typeAlignRight"></td>
+                    <td class="amount typeAlignRight">30.00</td>
+                    <td class="amount typeAlignRight">6,960</td>
+                    <td class="amount typeAlignRight"></td>
+                    <td class="amount typeAlignRight">3,040</td>
+                </tr>
+
                 <tr>
                     <td class="slipNum typeAlignCenter">2019/02/28</td>
                     <td class="account typeAlignLeft">普通預金、売掛金　等</td>
@@ -145,7 +157,7 @@
                     <td class="account typeAlignLeft">為替差損</td>
                     <td class="costCenter typeAlignLeft">財務部</td>
                     <td class="slipNum typeAlignLeft"><a href="">1007130-05&nbsp;<i class="fas fa-external-link-alt"></i></a></td>
-                    <td class="notes typeAlignLeft">決算時評価替え</td>
+                    <td class="notes typeAlignLeft">2020年3月期　決算時評価替え</td>
                     <td class="wf typeAlignCenter"><div class="wfApp">承認済</div></td>
                     <td class="currency typeAlignCenter">USD</td>
                     <td class="amount typeAlignRight"></td>
@@ -160,7 +172,7 @@
                     <td class="account typeAlignLeft">為替差損</td>
                     <td class="costCenter typeAlignLeft">財務部</td>
                     <td class="slipNum typeAlignLeft"><a href="">1007131-02&nbsp;<i class="fas fa-external-link-alt"></i></a></td>
-                    <td class="notes typeAlignLeft">決算時評価替え戻し</td>
+                    <td class="notes typeAlignLeft">2020年3月期　決算時評価替え戻し</td>
                     <td class="wf typeAlignCenter"><div class="wfApp">承認済</div></td>
                     <td class="currency typeAlignCenter">USD</td>
                     <td class="amount typeAlignRight">0.00</td>
