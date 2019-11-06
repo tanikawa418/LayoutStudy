@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    background-color: blue;
+}
+#f-container{
+    display: flex;
+    width: 960px;
+    flex-direction: column;
+    background-color: lightcoral;
+    min-height: 95vh;
+    margin: 0 auto;
+    text-align: left;
+
+
+}
+
+.topNavi {
+    background-color: lightgreen;
+    height: 70px;
+}
+main {
+    flex: 1;
+    display: flex;
+}
+.sideNavi {
+    background-color: green;
+    width: 20vw;
+
+}
+.contents{
+    background-color: rgb(112, 112, 68);
+    width: 80vw;
+
+}
+footer{
+    background-color: burlywood;
+}
