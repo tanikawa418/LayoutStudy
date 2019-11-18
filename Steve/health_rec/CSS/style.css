@@ -1,37 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Finger+Paint|Freckle+Face&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Slackey&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
 body{
-    text-align: center;
     background-color: blue;
 }
-#f-container{
-    display: flex;
+.clearfix::after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;  
+}
+div#wrapper{
     width: 960px;
-    flex-direction: column;
-    background-color: lightcoral;
-    min-height: 95vh;
+    background-color: rgb(202, 157, 157);
     margin: 0 auto;
-    text-align: left;
-
-
 }
 
-.topNavi {
+#topNavi {
     background-color: lightgreen;
+    /* margin: 0 auto; */
+    /* width: 960px; */
+    text-align: center;
     height: 70px;
+    font-size: 40px;
+    font-family: 'Slackey', cursive;
 }
-main {
-    flex: 1;
-    display: flex;
+header h2 {
+    color: green;
 }
-.sideNavi {
-    background-color: green;
-    width: 20vw;
 
+.sideNavi {
+    float: left;
+    background-color: green;
+    width: 280px;
+    height: auto;
+    padding: 20px 10px;
 }
 .contents{
+    float: left;
     background-color: rgb(112, 112, 68);
-    width: 80vw;
+    width: 660px;
+    height: auto;
 
 }
 footer{
-    background-color: burlywood;
+    clear: both;
+    background-color: gray;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+}
+li {
+    list-style: none;
 }

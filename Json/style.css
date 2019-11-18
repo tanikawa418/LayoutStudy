@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|M+PLUS+1p|Raleway&display=swap');
+* {
+    font-family: 'Lato', 'Raleway', 'M PLUS 1p' , sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(26,55,229,0.06);
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.3);
+}
+
+img{
+    width: 100%;
+    margin: 0;
+    vertical-align: top;
+}
+
+header{
+    background-color: #007acc;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header h1{
+    margin: 0;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Open Sans Condensed',sans-serif;
+}
+
+.photo{
+    position: relative;
+}
+
+.photo .inner{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0, 0, .5);
+    font-size: 10px;
+    color: #fff;
+    margin: 0;
+}
+
+.inner p{
+    padding: 20px;
+}
+
+.inner span{
+    margin-left: 10px;
+}
+
+
+/* breaktime */
+.clearfix::after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;  
+}
+
+.cardHeader{
+    width: 960px;
+    background-color:black;
+    color: aqua;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 140px;
+    padding-top: 20px;
+    vertical-align: middle;
+}
+
+.cardNum {
+    float: left;
+    /* display: block; */
+    margin-left: 10px;
+    /* height: 40px; */
+    padding: 0;
+    vertical-align: middle;
+    /* border-style: solid; */
+    font-size: 200%;
+}
+
+.cardDate {
+    float: left;
+    margin-left: 30px;
+    /* border-style: solid; */
+    font-size: 200%;
+}
+
+.headIcons {
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin: 0 10px 0 10px;
+}
+
+.cardMain {
+    width: 960px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: indigo;
+}
+
+.sumArea {
+    width: 174px;
+    height: 180px;
+    margin: 10px 10px 0px 10px;
+    background-color: burlywood;
+    border: 1 solid white;
+    float: left;
+    padding-left: 10px;
+}
+
+.statsArea , .imageArea , .sumArea {
+    height: 200px;
+}
+.statsArea {
+    width: 317px;
+    margin: 10px 10px 0px 0px;
+    background-color:aqua;
+    float: left;
+    border: 1 solid white;
+    padding-top: 0px;
+    padding-left: 10px;
+}
+
+.imageArea {
+    margin: 10px 10px 0px 0px;
+    width: 409px;
+    float: right;
+    background-color: chocolate;
+    border: 1 solid white;
+}
+
+.comArea {
+    clear: both;
+    float: left;
+    width: 920px;
+    height: 155px;
+    background-color: lightpink;
+    margin: 10px 10px 10px 10px;
+    padding: 0px 10px 10px 10px;
+    /* overflow-anchor: a; */
+}
+
+.areaTitle  {
+    font-size: 20px;
+    /* background-color: magenta; */
+    font-weight: bold;
+}
+
+
+.detail {
+    margin-left: 15px;
+    line-height: 90%;
+    font-size: 120%;
+}
+
+.statsDetail {
+    line-height: 75%;
+    margin-left: 15px;
+}
