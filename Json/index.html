@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title>My Photos</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.css">
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" type="text/javascript"></script> -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" type="text/javascript" ></script>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Break Times Match Stats</h1>
+        </header>
+
+    <div class="card">
+        <div class="cardHeader clearfix">
+            <div class="cardNum">No.1</div>
+            <div class="cardDate">2019/3/4</div>
+            <div class="headIcons" id="placeIcon"><img src="icons/m-style.png" alt=""></div>
+            <div class="headIcons" id="oppIcon"><img src="icons/yada.png" alt="Y"></div>
+            <div class="headIcons" id="gameIcon"><img src="icons/9ball.png" alt=""></div>
+        </div>
+
+        <div class="cardMain clearfix">
+            <div class="sumArea">
+                <p class="areaTitle">Result</p>
+                <hr style="border-color: lightgray;">
+                <div class="detail">
+                    <p>Set : 0 - 3 (Lose)</p>
+                    <p>Game : 10 - 15</p>
+                    <p>Runout : 0 - 1</p>
+                </div>
+            </div>
+            <div class="statsArea">
+                    <p class="areaTitle">Stats</p>
+                    <hr style="border-color: lightgray;">
+
+                    <div class="statsDetail">
+                        <p>Sets : 48-63 (43.24%) 1.2pt↓  4連敗中</p>
+                        <p>Games : 379-423 (47.26%) 0.23pt↓</p>
+                        <p>Days : 8-16-5 (3連敗中)</p>
+                        <p>RunoutRate: 2.33% - 6.93%</p>
+                    </div>
+                <!-- <p>statsArea</p> -->
+            </div>
+            <div class="imageArea">
+                <a href="img/20180303.png" data-lightbox="lb">
+                    <img src="img/20180303.png" alt="" style="width:100%;height: 100%;">
+                </a>
+
+
+            </div>
+            <div class="comArea">
+                <!-- <p class="areaTitle">Comments</p> -->
+                <p>
+                        今日もお疲れ様でした！
+
+                        いい感じで撞けるときとそうでない時の差が激しくてなかなか難しかったです。入れつないで行けるときも多々あっただけに、なんかもったいないなぁという印象でした。何回9ボールを飛ばしたか・・(;'∀')
+                        
+                        矢田さんは今日も鬼モードじゃなくて色々試して撞いてた感じでしたので、コメントは特にないかなぁ。抜きが多かったのもきっとそのせいでしょうし。
+                        でも最後のマスワリはお見事でした！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！さすがです！
+                        
+                </p>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="img_unit">
+            <div class="photo">
+                
+                <!-- <img src="img/park.jpeg" alt="">
+                <div class="inner"><p>test<span>testspan</span></p></div> -->
+
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+    var images = [
+        {
+            "path": "img/park.jpeg",
+            "name": "FUKA",
+            "caption": "にっこり"
+        },
+        {
+            "path": "img/lunch.jpeg",
+            "name": "FUKA2",
+            "caption": "にっこり2"
+        },
+        {
+            "path": "img/feed.jpeg",
+            "name": "Mom",
+            "caption": "ママ"
+        }
+    ];
+
+    var myimg;
+    var mycaption;
+    var mydiv;
+
+    for (var i=0; i<images.length; i++){
+
+        myimg = document.createElement('img');
+        myimg.setAttribute('src',images[i].path);
+
+        mycaption = document.createElement('div');
+        mycaption.className = 'inner';
+        mycaption.innerHTML = '<p>' + images[i].caption + '<span>' + images[i].name + '</span></p>';
+
+        mydiv = document.createElement('div');
+        mydiv.className = 'photo';
+        mydiv.appendChild(myimg);
+        mydiv.appendChild(mycaption);
+        document.getElementById('img_unit').appendChild(mydiv);
+    }
+   // alert(images[0].caption);
+    </script> -->
+    </body>
+</html>

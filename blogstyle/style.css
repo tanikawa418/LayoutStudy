@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Finger+Paint|Freckle+Face&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato',sans-serif;
+    font-size: 14px;
+    background-color: #f2f2f2;    
+}
+h1 {
+    font-family: 'Finger Paint', cursive;
+    color: burlywood;
+    display: inline;
+}
+#blogTitle {
+    font-family: 'Freckle Face', cursive;
+    font-size: 50px;
+    color: saddlebrown;
+    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+.headerinner {
+    width: 960px;
+    height: 50px;
+    margin: auto;
+    background-image: url(./img/icons/samsara.jpg);
+    background-image:radial-gradient(20%);
+
+}
+
+header {
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 auto 20px auto;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul li {
+    background-color:white;
+    opacity: 80%;
+    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+    -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+    0px 1px 0 #FFF,  0-1px 0 #FFF,
+    -1px 0 0 #FFF, 1px 0 0 #FFF;
+
+    float: left;
+    font-size: 110%;
+    margin: 15px 12px 0px;
+    list-style: none;
+}
+#wrapper {
+    width: 960px;
+    height: auto;
+    margin: 100px auto;
+    /* border: 1px solid blue; */
+}
+.leftside {
+    width: 600px;
+    height: auto;
+    float: left;
+}
+.rightside {
+    /* padding: 10px; */
+    width: 330px;
+    height: auto;
+    float: right;
+    /* border: 1px solid black; */
+}
+article {
+    /* border: 3px solid black; */
+    border-left:20px solid aquamarine;
+    width: 520px;
+    /* height: 160px; */
+    margin: 15px 20px;
+    padding: 10px;
+    background-color: ivory;
+    /* position: relative; */
+    /* position: relative; */
+}
+.atclImage{
+    width: 200px;
+    height: 150px;
+    float: right;
+    position: relative;
+    margin: 5px 5px 5px 10px;
+}
+
+.timeStamp {
+    font-size: 75%;
+    line-height:250%;
+    text-align: right;
+}
+.imgIcon {
+    width: 25px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+article h2 {
+    /* float: left; */
+    /* display: inline-block; */
+}
+.detail {
+    white-space: normal;
+
+}
+.detail:first-letter {
+    font-size: 250%;
+    overflow: hidden;
+}
+.load {
+    margin-left: 30px;
+    font-size: 120%;
+    text-decoration: none;
+}
+.frmSearch {
+    width: 300px;
+    margin: 15px 0 30px 15px;
+}
+.searchBtn {
+    background-color: brown;
+    color: cornsilk;
+    border-radius: 20%;
+    height: 30px;
+    padding: 2px 5px;
+}
+#category ul li {
+    list-style: none;
+    line-height: 120%;
+    font-size: 120%;
+    margin: 0 0 7px 10px;
+    font-style: italic;
+}

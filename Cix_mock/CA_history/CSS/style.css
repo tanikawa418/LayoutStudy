@@ -1,0 +1,215 @@
+body {
+    /* min-height: 100vh;
+    display: flex;
+    flex-direction: column; */
+    background-color:#DEE5F2;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+.pageHeader{
+    height: 50px; 
+    background-color:#2D63BE;
+    padding-left: 30px;
+    color: white;
+}
+.globalNavi{
+    background-color: #DEE5F2;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    vertical-align: middle;
+    /* border-style: solid; */
+}
+.contents{
+    /* margin-left: 20px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    /* background-color#DEE5F2; */
+    background-color:#ffffff;
+    height: 800px;
+}
+.slipHeader{
+    /* border-style: solid; */
+    height: 350px;
+}
+.slipInfo{
+    background-color: #ffffff;
+    width: 55%;
+    height:300px;
+    float: left;
+    padding-top: 10px;
+}
+.statusInfo{
+    padding-top: 10px;
+    background-color:#ffffff;
+    width: 42%;
+    height:300px;
+    /* margin-left: 5%; */
+    float: right;
+    /* border-style: solid; */
+}
+.tableArea{
+    clear: both;
+    background-color: #ffffff;
+    /* border-style: solid; */
+    white-space: nowrap;
+    overflow: auto;
+}
+.mainTable{
+    overflow: auto;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    table-layout: fixed;
+}
+th {
+    background-color: #F6F6F6;
+    padding: 5px;
+    white-space: normal;
+}
+td{
+    padding: 5px;
+}
+.typeAlignLeft{
+    text-align: left;
+}
+.typeAlignCenter{
+    text-align: center;
+}
+.typeAlignRight{
+    text-align: right;
+}
+.wfApp{
+    background-color:#1AB068;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 70%;
+    border-radius: 20px;
+    color: white;
+}
+.wfWip{
+    background-color:#2E63BE;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 70%;
+    border-radius: 20px;
+    color: white;
+}
+
+.account{
+    width: 1260px;
+}
+.costCenter{
+    min-width: 90px;
+}
+.notes{
+    width: 200px;
+}
+.slipNum{
+    min-width: 120px;
+}
+.wf{
+    min-width: 100px;
+}
+.currency{
+    width: 50px;
+}
+.amount{
+    min-width: 140px;
+}
+.areaTitle{
+    font-size: 120%;
+}
+.slipDetailArea{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3F70C3;
+    height: 250px;
+    margin: 10px;
+    padding: 20px;
+}
+.statusDetailArea{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D9D9D9;
+    height: 250px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 120%;
+}
+
+.detailField{
+    text-align: right;
+    font-weight: bold;
+    width: 130px;
+    vertical-align: top;
+}
+.statusDetailTh{
+    text-align: right;
+    border-bottom: solid 2px darkgray;
+    margin-bottom: 3px;
+}
+.headerAmt{
+    min-width:140px;
+    text-align: right;
+    height: 50px;
+
+}
+.headerCrr{
+    color: darkgray;
+    font-size: 80%;
+}
+/* .sumResult{
+    background-color:#D9E7FF;
+} */
+.logo{
+    display: inline;
+    width: 20%;
+    font-size: 200%;
+    /* font-weight: bold; */
+    color: white;
+}
+.favorites{
+    margin-left: 30px;
+    width: 20%;
+    display: inline;
+}
+select {
+    background-color: #2D63BE;
+    border-style: none;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline;
+}
+.pageHeaderRight{
+    vertical-align: middle;
+    float: right;
+    margin: 10px;
+    margin-left: 15px;
+}
+input{
+    background-color: #4C83E8;
+    color: white;
+    width: 250px;
+}
+.img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+::placeholder{
+    color:lightgray;
+}
+.origin{
+    font-weight: bold;
+    background-color: aqua;
+}
